@@ -1,3 +1,3 @@
 #!/bin/bash
-# takes a URL and displays all HTTP methhods accepted
-curl -sI "$1" | grep -i "Allow" | awk -F ": " '{ print $2 }'
+# Send a GET request to a given URL with a header variable.
+curl -sH "X-School-User-Id: 98" "$1"
